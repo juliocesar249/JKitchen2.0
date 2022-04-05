@@ -1,0 +1,24 @@
+.cartao__imagem--arroz {
+    background-image: url('../img/arroz.jpg');
+    width: 100%;
+}
+
+.cartao__imagem--feijao {
+    background-image: url('../img/feijao.jpg');
+}
+
+.cartao__imagem--lasanha {
+    background-image: url('../img/lasanha.jpg');
+}
+
+.cartao__imagem--strogonoff {
+    background-image: url('../img/strogonoff.jpg');
+}
+
+.cartao__imagem--costela-de-porco {
+    background-image: url('../img/costela_de_porco.jpg');
+}
+
+.cartao__imagem--amondega {
+    background-image: url('../img/amondegajpg.jpg');
+}

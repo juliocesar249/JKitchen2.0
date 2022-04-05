@@ -1,0 +1,55 @@
+.principal__contato {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    justify-content: space-evenly;
+    width: 15rem;
+}
+
+
+.contato__link {
+    color: var(--rosa-branco);
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: transform 300ms;
+}
+
+.contato__link:hover {
+    transform: scale(1.1);
+}
+
+.contato__social {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.social__links {
+    font-size: 4rem;
+    font-weight: initial;
+}
+
+.social__links--twitter {
+    -webkit-text-stroke: 2px black;
+    color: rgb(64, 170, 212);
+}
+
+.social__links--facebook {
+    -webkit-text-stroke: 2px black;
+    color: rgb(20, 72, 184);
+}
+
+.social__links--instagram {
+    align-items: center;
+    background: linear-gradient(45deg, #ff0, #d19, #a0f, #00f);
+    border-top-color: transparent;
+    border-radius: 1rem;
+    color: var(--branco);
+    display: flex;
+    font-size: 3.4rem;
+    height: 4rem;
+    justify-content: center;
+    width: 4rem;
+}

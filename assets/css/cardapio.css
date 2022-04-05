@@ -1,0 +1,9 @@
+.principal__cardapio {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: calc(2rem - 10px);
+    width: 70%;
+}

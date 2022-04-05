@@ -1,0 +1,125 @@
+.cardapio__cartao {
+    background-color: var(--rosa-branco);
+    border: solid 3px var(--fonte-cor-padrao);
+    border-radius: 0.8rem;
+    box-sizing: border-box;
+    color: var(--fonte-cor-cartao);
+    /* height: 20rem; */
+    margin: 10px;
+    overflow: scroll;
+    transition: all 300ms;
+    width: 26%;
+}
+
+.cardapio__cartao label {
+    cursor: pointer;
+}
+
+.cardapio__cartao:hover, .cardapio__cartao:focus {
+    transform: scale(1.05);
+}
+
+.cartao__imagem {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-bottom: solid 3px var(--fonte-cor-padrao);
+    height: 45%;
+    max-height: 10rem;
+    /* 161px; */
+    width: 100%;
+}
+
+.cartao__conteudo {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    height: calc(100% - 45%);
+    line-height: 4rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.cartao__titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    grid-column: 1 / 3;
+    grid-row: 1 / 1;
+}
+
+.cartao__preco {
+    font-size: 1.3rem;
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+}
+
+.cartao__checkbox, .cartao__checkbox-customizado {
+    align-self: center;
+    justify-self: center;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+.cartao__checkbox {
+    height: 0;
+    opacity: 0;
+    width: 0;
+}
+
+.cartao__checkbox-customizado {
+    align-items: center;
+    border: solid 3px;
+    border-radius: .3rem;
+    box-sizing: border-box;
+    display: flex;
+    height: 36%;
+    justify-content: center;
+    transition: all 300ms;
+    width: 36%;
+}
+
+.cardapio__cartao .cartao__checkbox-customizado::after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(35deg);
+    border: solid var(--branco);
+    border-width: 0 4px 4px 0;
+    content: '';
+    display: none;
+    height: 10px;
+    position: relative;
+    top: -2px;
+    transform: rotate(45deg);
+    width: 5px;
+}
+
+.cartao__checkbox:checked ~ .cartao__checkbox-customizado:after {
+    display: block;
+}
+
+.cartao__checkbox:checked ~ .cartao__checkbox-customizado {
+    background-color: var(--cor-fundo);
+}
+
+.cartao__quantidade {
+    display: none;
+}
+
+.cartao__checkbox:checked ~ .cartao__quantidade {
+    display: block;
+    grid-column: span 2;
+}
+
+.quantidade__campo {
+    background: #f8bdbd;
+    border: none;
+    border-radius: .5rem;
+    color: inherit;
+    font-size: 1.6rem;
+    text-align: start;
+    width: 100%;
+}
+
+.quantidade__campo::placeholder {
+    color: inherit;
+}

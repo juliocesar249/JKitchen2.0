@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/icone/logo.ico" type="image/x-icon">
+        <title>JKitchen</title>
+        <link rel="stylesheet" href="assets/css/base/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap">
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <link rel="stylesheet" href="assets/css/cabecalho.css">
+        <link rel="stylesheet" href="assets/css/principal.css">
+        <link rel="stylesheet" href="assets/css/menu.css">
+        <link rel="stylesheet" href="assets/css/cardapio.css">
+        <link rel="stylesheet" href="assets/css/cartao.css">
+        <link rel="stylesheet" href="assets/css/cartao-imagem.css">
+        <link rel="stylesheet" href="assets/css/principal-tabela.css">
+    </head>
+    <body>
+        <header class="cabecalho container">
+            <div class="cabecalho__borda">
+                <h1 class="cabecalho__titulo titulo"><span class="titulo--destaque">JK</span>itchen</h1>
+                <h2 class="cabecalho__descricao">O melhor restaurante com a melhor comida!</h2>
+            </div>
+        </header>
+        <main class="principal">
+            <section class="principal__menu">
+                <a href="index.html" class="botao menu__botao menu__botao--menu">Cardápio</a>
+                <a href="contato.html" class="botao menu__botao menu__botao--contato">Contato</a>
+            </section>
+            <form class="principal__cardapio" onsubmit="pedidoController.adiciona(event)">
+                <article class="cardapio__cartao" tabindex="0">
+                    <label>
+                        <img src="assets/img/arroz.jpg" class="cartao__imagem" alt="Imagem de um prato de arroz">
+                        <section class="cartao__conteudo">
+                            <h3 class="cartao__titulo" tabindex="0">Arroz</h3>
+                            <p class="cartao__preco" tabindex="0">R$16,00</p>
+                            <input type="checkbox" id="cartao__checkbox" class="cartao__checkbox" aria-label="Adicionar pedido">
+                            <span class="cartao__checkbox-customizado" role="checkbox"></span>
+                            <fieldset class="cartao__quantidade">
+                                <input type="number" placeholder="Quantidade..." class="quantidade__campo" max="10" min="1">
+                            </fieldset>
+                        </section>
+                    </label>
+                </article>
+                <article class="cardapio__cartao" tabindex="0">
+                    <label>
+                        <img src="assets/img/feijao.jpg" class="cartao__imagem">
+                        <section class="cartao__conteudo">
+                            <h3 class="cartao__titulo" tabindex="0">Feijão</h3>
+                            <p class="cartao__preco" tabindex="0">R$18,00</p>
+                            <input type="checkbox" id="cartao__checkbox" class="cartao__checkbox" aria-label="Adicionar pedido">
+                            <span class="cartao__checkbox-customizado" role="checkbox"></span>
+                            <fieldset class="cartao__quantidade">
+                                <input type="number" placeholder="Quantidade..." class="quantidade__campo" max="10" min="1">
+                            </fieldset>
+                        </section>
+                    </label>
+                </article>
+                <article class="cardapio__cartao" tabindex="0">
+                    <label>
+                        <img src="assets/img/lasanha.jpg" class="cartao__imagem">
+                        <section class="cartao__conteudo">
+                            <h3 class="cartao__titulo" tabindex="0">Lasanha</h3>
+                            <p class="cartao__preco" tabindex="0">R$10,00</p>
+                            <input type="checkbox" id="cartao__checkbox" class="cartao__checkbox" aria-label="Adicionar pedido">
+                            <span class="cartao__checkbox-customizado" role="checkbox"></span>
+                            <fieldset class="cartao__quantidade">
+                                <input type="number" placeholder="Quantidade..." class="quantidade__campo" max="10" min="1">
+                            </fieldset>
+                        </section>
+                    </label>
+                </article>
+                <article class="cardapio__cartao" tabindex="0">
+                    <label>
+                        <img src="assets/img/strogonoff.jpg" class="cartao__imagem">
+                        <section class="cartao__conteudo">
+                            <h3 class="cartao__titulo" tabindex="0">Strogonoff</h3>
+                            <p class="cartao__preco" tabindex="0">R$13,00</p>
+                            <input type="checkbox" id="cartao__checkbox" class="cartao__checkbox" aria-label="Adicionar pedido">
+                            <span class="cartao__checkbox-customizado" role="checkbox"></span>
+                            <fieldset class="cartao__quantidade">
+                                <input type="number" placeholder="Quantidade..." class="quantidade__campo" max="10" min="1">
+                            </fieldset>
+                        </section>
+                    </label>
+                </article>
+                <article class="cardapio__cartao" tabindex="0">
+                    <label>
+                        <img src="assets/img/costela_de_porco.jpg" class="cartao__imagem">
+                        <section class="cartao__conteudo">
+                            <h3 class="cartao__titulo" tabindex="0">Costela de porco</h3>
+                            <p class="cartao__preco" tabindex="0">R$20,00</p>
+                            <input type="checkbox" id="cartao__checkbox" class="cartao__checkbox" aria-label="Adicionar pedido">
+                            <span class="cartao__checkbox-customizado" role="checkbox"></span>
+                            <fieldset class="cartao__quantidade">
+                                <input type="number" placeholder="Quantidade..." class="quantidade__campo" max="10" min="1">
+                            </fieldset>
+                        </section>
+                    </label>
+                </article>
+                <article class="cardapio__cartao" tabindex="0">
+                    <label>
+                        <img src="assets/img/amondegajpg.jpg" class="cartao__imagem">
+                        <section class="cartao__conteudo">
+                            <h3 class="cartao__titulo" tabindex="0">Amôndega</h3>
+                            <p class="cartao__preco" tabindex="0">R$7,00</p>
+                            <input type="checkbox" id="cartao__checkbox" class="cartao__checkbox" aria-label="Adicionar pedido">
+                            <span class="cartao__checkbox-customizado" role="checkbox"></span>
+                            <fieldset class="cartao__quantidade">
+                                <input type="number" placeholder="Quantidade..." class="quantidade__campo" max="10" min="1">
+                            </fieldset>
+                        </section>
+                    </label>
+                </article>
+                <button type="submit" href="pagamento.html" class="botao principal__confirmar">Confirmar pedido</button>
+            </form>
+        </main>
+
+        <script src="assets/js/index.js"></script>
+        <script src="assets/js/PedidoController.js"></script>
+        <script src="assets/js/Prato.js"></script>
+        <script src="assets/js/ConnectionFactory.js"></script>
+        <script src="assets/js/PratoDao.js"></script>
+        
+        <script>
+            let pedidoController = new PedidoController();
+        </script>
+    </body>
+</html>

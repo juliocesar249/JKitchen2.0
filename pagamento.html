@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/icone/logo.ico" type="image/x-icon">
+        <title>Pagamento | JKitchen</title>
+        <link rel="stylesheet" href="assets/css/base/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap">
+        <link rel="stylesheet" href="assets/css/cabecalho.css">
+        <link rel="stylesheet" href="assets/css/principal.css">
+        <link rel="stylesheet" href="assets/css/menu.css">
+        <link rel="stylesheet" href="assets/css/principal-tabela.css">
+        <script>
+            let $ = document.querySelector.bind(document);
+        </script>
+    </head>
+    <body>
+        <header class="cabecalho container">
+            <div class="cabecalho__borda">
+                <h1 class="cabecalho__titulo titulo"><span class="titulo--destaque">JK</span>itchen</h1>
+                <h2 class="cabecalho__descricao">O melhor restaurante com a melhor comida!</h2>
+            </div>
+        </header>
+        <main class="principal container">
+            <section class="principal__menu">
+                <a href="contato.html" class="botao menu__botao menu__botao--contato" onclick="PedidoController.apagaIndexed()">Contato</a>
+            </section>
+            <section class="principal__tabela-total">
+                <table border="3" class="tabela-total">
+                    <thead>
+                        <tr>
+                            <th>Prato</th>
+                            <th>Quantidade</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <textarea rows="10" cols="33" class="principal__observacao">Observações(Ex: pouco sal...)</textarea>
+                <form class="principal__pagamentos">
+                    <label class="pagamentos__opcoes pagamento1">
+                        <input type="radio" name="forma-de-pagamento" class="pagamentos__radio pagamento__radio--pix" aria-label="Pagar com Pix" tabindex="0">
+                        <img src="assets/img/icone/pix.svg" alt="Forma de pagamento Pix" class="pagamentos__pagamento pagamentos__pagamento--pix" alt="Logotipo do Pix" >
+                    </label>
+                    <label class="pagamentos__opcoes pagamento2">
+                        <input type="radio" name="forma-de-pagamento" class="pagamentos__radio pagamento__radio--credit-card" aria-label="Pagar com cartão de débito" tabindex="0">
+                        <img src="assets/img/icone/cartao-credito.svg" alt="Forma de pagamento Cartão Débito" class="pagamentos__pagamento pagamentos__pagamento--credit-card" alt="Ícone de um cartão de crédito">
+                    </label>
+                </form>
+                <button class="botao principal__confirmar principal__voltar" onclick="PedidoController.voltar()">Voltar</button>
+                <button class="botao principal__confirmar principal__pagar" onclick="pedidoController.pagar()">Pagar</button>
+            </section>
+
+            <div id="openModal" class="modalDialog">
+                <div>
+                    <p>Pagamento realizado.</p>
+                </div>
+            </div>
+        </main>
+        <script src="assets/js/PedidoController.js"></script>
+        <script src="assets/js/ConnectionFactory.js"></script>
+        <script src="assets/js/PratoDao.js"></script>
+        <script>
+            let pedidoController = new PedidoController();
+            pedidoController.adicionaTabela();
+        </script>
+    </body>
+</html>

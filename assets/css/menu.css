@@ -1,0 +1,9 @@
+.principal__menu {
+    display: flex;
+    padding: 0.6rem;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.menu__botao {
+    width: 15%;
+}

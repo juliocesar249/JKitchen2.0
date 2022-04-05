@@ -1,0 +1,19 @@
+.cabecalho__borda {
+    align-items: center;
+    border: dotted 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5rem 4rem;
+}
+
+.cabecalho__titulo {
+    color: var(--rosa-branco);
+    padding: .5rem;
+}
+
+.cabecalho__descricao {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: .5rem;
+}
