@@ -6,7 +6,7 @@
     color: var(--fonte-cor-cartao);
     /* height: 20rem; */
     margin: 10px;
-    overflow: scroll;
+    overflow: hidden;
     transition: all 300ms;
     width: 26%;
 }
@@ -15,18 +15,10 @@
     cursor: pointer;
 }
 
-.cardapio__cartao:hover, .cardapio__cartao:focus {
-    transform: scale(1.05);
-}
-
 .cartao__imagem {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
     border-bottom: solid 3px var(--fonte-cor-padrao);
-    height: 45%;
+    height: 8.3593125rem;
     max-height: 10rem;
-    /* 161px; */
     width: 100%;
 }
 

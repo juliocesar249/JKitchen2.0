@@ -1,0 +1,122 @@
+@media screen and (min-width: 0px) {
+    
+    .botao {
+        height: 4rem;
+        margin: .6rem;
+    }
+
+    .cabecalho__borda {
+        padding: 4.5rem 0;
+    }
+
+    .cabecalho__descricao {
+        text-align: center;
+    }
+
+    .principal__menu {
+        align-items: center;
+        flex-direction: column;
+        padding: .6rem 0;
+        width: 100%;
+    }
+
+    .principal__cardapio {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .cardapio__cartao {
+        margin-left: .7rem;
+        overflow: hidden;
+        width: 90%;
+    }
+
+    .cardapio__cartao:hover, .cardapio__cartao:focus {
+        transform: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .botao {
+        height: 3.5rem;
+        margin: .6rem;
+    }
+
+    .principal__menu {
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .principal__cardapio {
+        flex-direction: row;
+    }
+
+    .cardapio__cartao {
+        width: 42%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .cabecalho__borda {
+        padding: 2.5rem 4rem;
+    }
+
+    .cabecalho__descricao {
+        text-align: none;
+    }
+
+    .principal__menu {
+        width: 50%;
+    }
+
+    .principal__cardapio {
+        width: 70%;
+    }
+
+    .cardapio__cartao {
+        width: 30%;
+    }
+
+    .cardapio__cartao:hover, .cardapio__cartao:focus {
+        transform: scale(1.05);
+    }
+
+    .cardapio__cartao:nth-child(5) .cartao__titulo {
+        line-height: 1.8rem;
+    }
+
+    .cartao__checkbox-customizado {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .cardapio__cartao {
+        margin: 0.625rem;
+        max-height: 24.7rem;
+        width: 26%;
+    }
+
+    .cartao__imagem {
+        height: 45%;
+        max-height: 10rem;
+        width: 100%;
+    }
+
+    .cartao__checkbox-customizado {
+        height: 40%;
+        width: 36%;
+    }
+
+    .cardapio__cartao:nth-child(5) .cartao__titulo {
+        line-height: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1363px) {
+    .cardapio__cartao:nth-child(5) .cartao__titulo {
+        line-height: 3.6rem;
+    }
+}
