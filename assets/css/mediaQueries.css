@@ -82,6 +82,10 @@
     .principal__voltar {
         grid-row: 5;
     }
+
+    .modalDialog div {
+        width: 22rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -123,6 +127,10 @@
 
     .pagamentos__pagamento--credit-card {
         width: 48%;
+    }
+
+    .modalDialog div {
+        width: 25rem;
     }
 }
 
