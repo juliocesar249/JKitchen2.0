@@ -13,13 +13,13 @@
     grid-row: 1;
 }
 
-tbody > tr:last-child {
-    text-align: end;
-}
-
 td, th {
     border: solid 3px var(--rosa-branco);
     padding: 1rem 1rem;
+}
+
+td:last-child {
+    text-align: center;
 }
 
 .principal__pagar, .principal__voltar {
@@ -167,3 +167,5 @@ td, th {
         opacity: 0;
     }
 }
+
+/** Fim modal */

@@ -106,7 +106,7 @@ class PedidoController {
 
                         let precoTotal = JSON.stringify(precos.reduce((precoAnterior, precoAtual) => precoAnterior + precoAtual)).indexOf('.') > 0 ? JSON.stringify(precos.reduce((precoAnterior, precoAtual) => precoAnterior + precoAtual)).replace('.', ',') : JSON.stringify(precos.reduce((precoAnterior, precoAtual) => precoAnterior + precoAtual));
 
-                        tabela.innerHTML += `<tr><td colspan="3">R$${precoTotal.indexOf(',') >= 0 ? precoTotal : precoTotal + ",00"}</td></tr>`;
+                        tabela.innerHTML += `<tr><td colspan="3" style="text-align: end">R$${precoTotal.indexOf(',') >= 0 ? precoTotal : precoTotal + ",00"}</td></tr>`;
                     })
             })
             .catch(erro => console.log(erro));

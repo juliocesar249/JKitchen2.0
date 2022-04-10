@@ -34,6 +34,54 @@
     .cardapio__cartao:hover, .cardapio__cartao:focus {
         transform: none;
     }
+
+    .principal__tabela-total {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5, auto);
+        width: 100%;
+    }
+
+    .tabela-total {
+        font-size: 1.4rem;
+        grid-column: 1;
+    }
+
+    td, th {
+        padding: 0.5rem;
+    }
+
+    .principal__observacao {
+        font-size: 1rem;
+        grid-column: 1;
+        margin: 1rem auto;
+    }
+
+    .principal__pagamentos {
+        grid-column: 1;
+    }
+
+    .principal__pagar, .principal__voltar {
+        justify-self: center;
+        grid-column: 1;
+    }
+
+    .pagamentos__pagamento--pix {
+        margin-right: 2rem;
+        padding: 1rem;
+        width: 50%;
+    }
+
+    .pagamentos__pagamento--credit-card {
+        width: 60%;
+    }
+
+    .principal__pagar {
+        grid-row: 4;
+    }
+
+    .principal__voltar {
+        grid-row: 5;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -55,6 +103,26 @@
 
     .cardapio__cartao {
         width: 42%;
+    }
+
+    .tabela-total {
+        font-size: 2rem;
+    }
+
+    th, td {
+        padding: 1rem;
+    }
+
+    .principal__observacao {
+        font-size: 1.4rem;
+    }
+
+    .pagamentos__pagamento--pix {
+        width: 34%;
+    }
+
+    .pagamentos__pagamento--credit-card {
+        width: 48%;
     }
 }
 
@@ -90,6 +158,45 @@
     .cartao__checkbox-customizado {
         width: 50%;
     }
+
+    .principal__tabela-total {
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(4, auto);
+        width: 55%;
+    }
+
+    .tabela-total {
+        grid-column: span 2;
+    }
+
+    .principal__observacao {
+        grid-column: span 2;
+        margin: 1rem;
+    }
+
+    .principal__pagamentos {
+        grid-column: span 2;
+    }
+
+    .pagamentos__pagamento--pix {
+        margin-right: 1rem;
+        width: 30%;
+    }
+
+    .pagamentos__pagamento--credit-card {
+        width: 40%;
+    }
+
+    .principal__voltar {
+        grid-column: 1;
+        grid-row: 4;
+        justify-self: end;
+    }
+
+    .principal__pagar {
+        grid-column: 2;
+        justify-self: unset;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -119,4 +226,17 @@
     .cardapio__cartao:nth-child(5) .cartao__titulo {
         line-height: 3.6rem;
     }
+
+    .principal__tabela-total {
+        width: 50%;
+    }
+
+    .pagamentos__pagamento--pix {
+        width: 25%;
+    }
+
+    .pagamentos__pagamento--credit-card {
+        width: 28%;
+    }
 }
+
